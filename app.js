@@ -39,20 +39,20 @@ console.log("JavaScript Telah Terhubung");
 // 1. Buat konstanta "NAMA_KEDAI" bertipe string (misal: "Kopi PSTI Kampus").
 const NAMA_KEDAI = "KoUPI PWK";
 // 2. Buat variabel "namaKasir" (misal: "Kak Eko") dan "shiftKerja" menggunakan "let".
-let NAMA_KASIR = "Grace";
-let SHIFT_KERJA = "Pagi";
+let namaKasir = "Grace";
+let shiftKerja = "Pagi";
 // 3. Cetak nilai NAMA_KEDAI, namaKasir, dan shiftKerja ke Console menggunakan console.log().
 console.log("Kedai ini bernama " + NAMA_KEDAI + "."); // mencetak nama kedai dengan menggabungkan String dan Tipe data
-console.log("Kasir yang bertugas bernama " + NAMA_KASIR + "."); // mencetak nama kasir
-console.log(NAMA_KASIR + " bertugas untuk Shift " + SHIFT_KERJA + "."); // mencetak shift kerja
+console.log("Kasir yang bertugas bernama " + namaKasir + "."); // mencetak nama kasir
+console.log(namaKasir + " bertugas untuk Shift " + shiftKerja + "."); // mencetak shift kerja
 
 
 // ---- DEMO PERBEDAAN LET vs CONST ----
 // TODO 2B:
 // Ubah (re-assign) nilai variabel "namaKasir" dengan nama kasir lain,
-NAMA_KASIR = "Valentine"
+namaKasir = "Valentine"
 // lalu cetak ke Console untuk membuktikan bahwa variabel "let" nilainya dapat diubah.
-console.log("Kasir baru telah diterima : " + NAMA_KASIR + ". Welcome!");
+console.log("Kasir baru telah diterima : " + namaKasir + ". Welcome!");
 
 
 // ---- BAGIAN 2B: INPUT INTERAKTIF & PENGANDAIAN DASAR ----
@@ -60,18 +60,18 @@ console.log("Kasir baru telah diterima : " + NAMA_KASIR + ". Welcome!");
 // 1. Tampilkan pop-up salam pembuka selamat datang menggunakan alert().
 alert("Selamat Datang ke KoUPI PWK ☕︎" + "\n" + "Kopi UPI Purwakarta.");
 // 2. Tampilkan dialog prompt() untuk meminta nama pengunjung, simpan hasilnya ke variabel "namaPelanggan".
-let NAMA_PELANGGAN = prompt("Halo! Masukkan nama kamu untuk dapatkan banyak DISKON 🏷️");
+let namaPelanggan = prompt("Halo! Masukkan nama kamu untuk dapatkan banyak DISKON 🏷️");
 // 3. Gunakan percabangan "if - else":
 //    - JIKA namaPelanggan ada isinya: tampilkan alert sapaan dan log ke console.
-if (NAMA_PELANGGAN) {
-    alert("Halo! " + NAMA_PELANGGAN + ". Yuk mulai kumpulkan poinnya!");
-    console.log("Pelanggan terdaftar : " + NAMA_PELANGGAN + ".");
+if (namaPelanggan) {
+    alert("Halo! " + namaPelanggan + ". Yuk mulai kumpulkan poinnya!");
+    console.log("Pelanggan terdaftar : " + namaPelanggan + ".");
 }
 //    - JIKA namaPelanggan kosong / klik Cancel: beri nilai default "Pelanggan Setia" dan tampilkan alert pemberitahuan.
 else {
-    NAMA_PELANGGAN = "Pelanggan Setia";
-    alert("Nama tidak/belum berhasil didaftarkan •︵•" + "\n" + "Sementara, kami akan memanggilmu " + NAMA_PELANGGAN + ". OK?");
-    console.log("Baiklah, sementara kami memanggilmu " + NAMA_PELANGGAN + ". OKAY:)");
+    namaPelanggan = "Pelanggan Setia";
+    alert("Nama tidak/belum berhasil didaftarkan •︵•" + "\n" + "Sementara, kami akan memanggilmu " + namaPelanggan + ". OK?");
+    console.log("Baiklah, sementara kami memanggilmu " + namaPelanggan + ". OKAY:)");
 }
 
 
@@ -84,17 +84,17 @@ else {
 // TODO 3:
 // 1. Buat 3 variabel poin transaksi: "poinKopi", "poinMakanan", dan "poinMerchandise"
 //    (isi dengan angka bulat bebas, misal: 45, 35, 20).
-let POIN_KOPI = 45;
-let POIN_MAKANAN = 35;
-let POIN_MERCHANDISE = 20;
+let poinKopi = 45;
+let poinMakanan = 35;
+let poinMerchandise = 20;
 // 2. Buat variabel "totalPoin" yang menjumlahkan ketiga variabel poin di atas.
-let TOTAL_POIN = POIN_KOPI + POIN_MAKANAN + POIN_MERCHANDISE;
+let totalPoin = poinKopi + poinMakanan + poinMerchandise;
 // 3. Cetak rincian perolehan poin dan totalPoin ke Console menggunakan console.log().
-console.log("=============== RINCIAN POIN = " + NAMA_PELANGGAN + " ==============="); // additional -> biar enak dibaca
-console.log("Semangat " + NAMA_PELANGGAN + "! Poin Kopi Kamu Mencapai : " + POIN_KOPI + " Poin!");
-console.log("Semangat " + NAMA_PELANGGAN + "! Poin Makanan Kamu Mencapai : " + POIN_MAKANAN + " Poin!");
-console.log("Semangat " + NAMA_PELANGGAN + "! Poin Merchandise Kamu Mencapai : " + POIN_MERCHANDISE + " Poin!");
-console.log("Total Keseluruhan Poin Kamu Sudah Mencapai : " + TOTAL_POIN + " Poin, " + NAMA_PELANGGAN + ". Yeay!");
+console.log("=============== RINCIAN POIN = " + namaPelanggan + " ==============="); // additional -> biar enak dibaca
+console.log("Semangat " + namaPelanggan + "! Poin Kopi Kamu Mencapai : " + poinKopi + " Poin!");
+console.log("Semangat " + namaPelanggan + "! Poin Makanan Kamu Mencapai : " + poinMakanan + " Poin!");
+console.log("Semangat " + namaPelanggan + "! Poin Merchandise Kamu Mencapai : " + poinMerchandise + " Poin!");
+console.log("Total Keseluruhan Poin Kamu Sudah Mencapai : " + totalPoin + " Poin, " + namaPelanggan + ". Yeay!");
 
 
 
@@ -108,17 +108,17 @@ let TIER_MEMBER = "";
 let BENEFIT = "";
 // 2. Gunakan percabangan "if - else if - else" berdasarkan nilai "totalPoin":
 //    - totalPoin >= 100 : tierMember = "Platinum", benefit = "Diskon 20% + Gratis 1 Minuman Signature"
-if (TOTAL_POIN >= 100) {
+if (totalPoin >= 100) {
     TIER_MEMBER = "Platinum";
     BENEFIT = "Diskon 20% + Gratis 1 Minuman Signature";
 }
 //    - totalPoin >= 70  : tierMember = "Gold", benefit = "Diskon 10% di setiap transaksi"
-else if (TOTAL_POIN >= 70) {
+else if (totalPoin >= 70) {
     TIER_MEMBER = "Gold";
     BENEFIT = "Diskon 10% di setiap transaksi";
 }
 //    - totalPoin >= 40  : tierMember = "Silver", benefit = "Diskon 5% untuk menu minuman"
-else if (TOTAL_POIN >= 40) {
+else if (totalPoin >= 40) {
     TIER_MEMBER = "Silver";
     BENEFIT = "Diskon 5% untuk menu minuman";
 }
@@ -132,8 +132,8 @@ console.log ("Semangat! Tier Member Kamu : " + TIER_MEMBER + ".");
 console.log ("Benefitnya : " + BENEFIT + ".");
 // 4. Tampilkan ringkasan hasil member (nama, total poin, tier, benefit) via dialog alert().
 alert(
-    "Nama : " + NAMA_PELANGGAN + "\n" +
-    "Total Poin : " + TOTAL_POIN + "\n" +
+    "Nama : " + namaPelanggan + "\n" +
+    "Total Poin : " + totalPoin + "\n" +
     "Tier Member : " + TIER_MEMBER + "\n" +
     "Benefit : " + BENEFIT
 );
@@ -146,7 +146,7 @@ alert(
 
 // TODO 5A:
 // Buat fungsi "hitungTotalPoin(p1, p2, p3)" yang menerima 3 parameter nilai poin,
-function HITUNG_TOTAL_POIN(p1, p2, p3) {
+function hitungTotalPoin(p1, p2, p3) {
 // menjumlahkannya, dan mengembalikan (return) nilai total penjumlahannya.
     let POIN = p1 + p2 + p3;
     return POIN;
@@ -155,7 +155,7 @@ function HITUNG_TOTAL_POIN(p1, p2, p3) {
 
 // TODO 5B:
 // Buat fungsi "tentukanTierMember(poin)" yang menerima 1 parameter nilai poin,
-function TENTUKAN_TIER_MEMBER(POIN) {
+function tentukanTierMember(POIN) {
 // dan mengembalikan (return) string nama tier beserta keterangannya.
     if (POIN >= 100) return "Platinum";
     if (POIN >= 70) return "Gold";
@@ -167,11 +167,11 @@ function TENTUKAN_TIER_MEMBER(POIN) {
 // TODO 5C:
 // Buktikan bahwa fungsi di atas bisa dipakai ulang (reusable):
 // 1. Hitung total poin dan tentukan tier untuk simulasi Pelanggan B (misal poin: 35, 25, 20).
-let PELANGGAN_B = HITUNG_TOTAL_POIN(35, 25, 20);
-let TIER_PELANGGAN_B = TENTUKAN_TIER_MEMBER(PELANGGAN_B);
+let PELANGGAN_B = hitungTotalPoin(35, 25, 20);
+let TIER_PELANGGAN_B = tentukanTierMember(PELANGGAN_B);
 // 2. Hitung total poin dan tentukan tier untuk simulasi Pelanggan C (misal poin: 15, 10, 5).
-let PELANGGAN_C = HITUNG_TOTAL_POIN(15, 10, 5);
-let TIER_PELANGGAN_C = TENTUKAN_TIER_MEMBER(PELANGGAN_C);
+let PELANGGAN_C = hitungTotalPoin(15, 10, 5);
+let TIER_PELANGGAN_C = tentukanTierMember(PELANGGAN_C);
 // 3. Cetak data Pelanggan B dan C ke tab Console.
 console.log("============================================================="); // additional -> biar enak dibaca
 console.log("Total Poin Pelanggan B adalah : " + PELANGGAN_B + " Poin!");
@@ -188,7 +188,7 @@ console.log("Tier member Pelanggan C adalah : " + TIER_PELANGGAN_C + ".");
 
 // TODO 6A:
 // Buat variabel Array bernama "menuRekomendasi" yang berisi minimal 5 nama menu kopi/makanan.
-let MENU_REKOMENDASI = [
+let menuRekomendasi = [
     "Americano", // -> Posisi index ke 0
     "Latte", // -> Posisi index ke 1
     "Cappucino", // -> Posisi index ke 2
@@ -199,17 +199,17 @@ let MENU_REKOMENDASI = [
 
 
 // TODO 6B:
-console.log("========== MENU REKOMENDASI UNTUK " + NAMA_PELANGGAN + " =========="); // additional -> biar enak dibaca
+console.log("========== MENU REKOMENDASI UNTUK " + namaPelanggan + " =========="); // additional -> biar enak dibaca
 // Gunakan perulangan "for loop" untuk mencetak setiap menu ke Console dengan format:
 // "1. Nama Menu", "2. Nama Menu", dst. Gunakan (i + 1) untuk nomor urutnya.
-for (let i = 0; i < MENU_REKOMENDASI.length; i++) {
-    console.log((i + 1) + ". " + MENU_REKOMENDASI[i]);
+for (let i = 0; i < menuRekomendasi.length; i++) {
+    console.log((i + 1) + ". " + menuRekomendasi[i]);
 }
 
 
 // TODO 6C:
 // Cetak jumlah total menu di akhir daftar menggunakan properti ".length".
 console.log("-------------------------------------------------------------"); // additional -> biar enak dibaca
-console.log("Total Menu : " + MENU_REKOMENDASI.length + ".");
+console.log("Total Menu : " + menuRekomendasi.length + ".");
 // Akhiri program dengan: console.log("=== TUGAS MANDIRI SELESAI DENGAN SUKSES! ===");
 console.log("=========== TUGAS MANDIRI SELESAI DENGAN SUKSES! ===========");
