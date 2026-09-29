@@ -26,7 +26,7 @@ console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 
 // TODO 1: Tulis satu baris console.log() untuk memastikan file app.js sudah terhubung!
 // Contoh output: "Skrip app.js berhasil terhubung!"
-
+console.log("JavaScript Telah Terhubung");
 
 
 
@@ -37,28 +37,41 @@ console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 // ---- BAGIAN 2A: VARIABEL IDENTITAS KEDAI KOPI ----
 // TODO 2A:
 // 1. Buat konstanta "NAMA_KEDAI" bertipe string (misal: "Kopi PSTI Kampus").
+const NAMA_KEDAI = "Kopi PSTI UPI";
 // 2. Buat variabel "namaKasir" (misal: "Kak Eko") dan "shiftKerja" menggunakan "let".
+let NAMA_KASIR = "Grace";
+let SHIFT_KERJA = "Pagi";
 // 3. Cetak nilai NAMA_KEDAI, namaKasir, dan shiftKerja ke Console menggunakan console.log().
-
-
-
+console.log("Kedai ini bernama " + NAMA_KEDAI); // mencetak nama kedai dengan menggabungkan String dan Tipe data
+console.log("Kasir yang bertugas bernama " + NAMA_KASIR); // mencetak nama kasir
+console.log("Kasir tersebut bertugas untuk shift " + SHIFT_KERJA); // mencetak shift kerja
 
 // ---- DEMO PERBEDAAN LET vs CONST ----
 // TODO 2B:
 // Ubah (re-assign) nilai variabel "namaKasir" dengan nama kasir lain,
+NAMA_KASIR = "Valentine"
 // lalu cetak ke Console untuk membuktikan bahwa variabel "let" nilainya dapat diubah.
-
-
+console.log("Kasir baru telah diterima : " + NAMA_KASIR);
 
 
 // ---- BAGIAN 2B: INPUT INTERAKTIF & PENGANDAIAN DASAR ----
 // TODO 2C:
 // 1. Tampilkan pop-up salam pembuka selamat datang menggunakan alert().
+alert("Selamat Datang ke Kopi PSTI UPI");
 // 2. Tampilkan dialog prompt() untuk meminta nama pengunjung, simpan hasilnya ke variabel "namaPelanggan".
+let NAMA_PELANGGAN = prompt("Halo! Masukkan nama kamu untuk Berbelanja");
 // 3. Gunakan percabangan "if - else":
 //    - JIKA namaPelanggan ada isinya: tampilkan alert sapaan dan log ke console.
+if (NAMA_PELANGGAN) {
+    alert("Halo! " + NAMA_PELANGGAN + ". Yuk berbelanja dan dapatkan hadiah!");
+    console.log("Pengunjung terdaftar : " + NAMA_PELANGGAN);
+}
 //    - JIKA namaPelanggan kosong / klik Cancel: beri nilai default "Pelanggan Setia" dan tampilkan alert pemberitahuan.
-
+else {
+    alert("Nama tidak/belum berhasil didaftarkan");
+    NAMA_PELANGGAN = "Pelanggan Setia";
+    console.log("Baiklah, sementara kami memanggilmu " + NAMA_PELANGGAN + ". OKAY:)");
+}
 
 
 
@@ -70,10 +83,16 @@ console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 // TODO 3:
 // 1. Buat 3 variabel poin transaksi: "poinKopi", "poinMakanan", dan "poinMerchandise"
 //    (isi dengan angka bulat bebas, misal: 45, 35, 20).
+let POIN_KOPI = 45;
+let POIN_MAKANAN = 35;
+let POIN_MERCHANDISE = 20;
 // 2. Buat variabel "totalPoin" yang menjumlahkan ketiga variabel poin di atas.
+let TOTAL_POIN = POIN_KOPI + POIN_MAKANAN + POIN_MERCHANDISE;
 // 3. Cetak rincian perolehan poin dan totalPoin ke Console menggunakan console.log().
-
-
+console.log("Perolehan Poin atas Pembelian Kopi Kamu Sudah Mencapai " + POIN_KOPI + " Poin!");
+console.log("Perolehan Poin atas Pembelian Makanan Kamu Sudah Mencapai " + POIN_MAKANAN + " Poin!");
+console.log("Perolehan Poin atas Pembelian Merchandise Kamu Sudah Mencapai " + POIN_MERCHANDISE + " Poin!");
+console.log("Total Keseluruhan Poin Kamu Sudah Mencapai " + TOTAL_POIN + " Poin!");
 
 
 // ============================================================
